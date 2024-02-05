@@ -406,9 +406,9 @@ i {
 }
 
 .content--card {
-  padding-top: 10vh;
-	height: 70vh;
-	width: 80vw;
+  
+	height: 80vh;
+	width: 90vw;
 	max-width: 1000px;
 	aspect-ratio: 0.8;
 	top: 10vh;
@@ -562,6 +562,7 @@ i {
 	}
 	.content--card {
 		width: 60vw;
+    height: 70vh;
 	}
 	.content--half {
 		width: 50%;

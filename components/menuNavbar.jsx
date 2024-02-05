@@ -7,10 +7,9 @@ export default function MenuNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Home",
-    "Our Team",
-    "About Us",
-    "Contact Us",
+    { label: "Home", href: "/" },
+    { label: "About Us", href: "/about" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   const icons = {
@@ -38,7 +37,7 @@ export default function MenuNavbar() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
       <NavbarItem >
-          <Link className="text-white text-[16px] acive:border-white focus:border-white " href="/" >
+          <Link className="text-white text-[16px]  " href="/" >
             Home
           </Link>
         </NavbarItem>
@@ -113,18 +112,17 @@ export default function MenuNavbar() {
       </NavbarContent>
    
       <NavbarMenu className="bg-slate-500 bg-opacity-10 backdrop-blur-sm px-0 ">
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-          <Link
-            style={{ color: index === menuItems.length - 1 ? "#FFA800" : "white" }}
-            className="w-full px-2 font-sans"
-            href="#"
-            size="lg"
-          >
-            {item}
-          </Link>
-        </NavbarMenuItem>
-        
+      {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item.label}-${index}`}>
+            <Link
+              style={{ color: index === menuItems.length - 1 ? "#FFA800" : "white" }}
+              className="w-full px-2 font-sans"
+              href={item.href}
+              size="lg"
+            >
+              {item.label}
+            </Link>
+          </NavbarMenuItem>
         ))}
       </NavbarMenu>
     </Navbar>
