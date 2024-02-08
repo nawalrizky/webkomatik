@@ -6,8 +6,13 @@ import { ImageOne } from "../components/imageOne";
 import { KomatikLogo } from "@/components/komatikLogo";
 import { Division } from "@/components/division";
 import { Instagram, Facebook, Line, Mail } from "@/components/icons";
+import Link from "next/link";
 
 export default function Home() {
+  const scrolltoHash = function (element_id: string) {
+    const element = document.getElementById(element_id)
+    element?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  }
   return (
     <main className="">
       <div className="absolute top-0 left-0 h-[100vh] z-10 w-full mt-20 ">
@@ -26,16 +31,29 @@ export default function Home() {
               tech innovation reality!
             </h1>
             <div className="inline-flex justify-end ml-14 items-end gap-2">
-              <button className="bg-secondary text-black font-sans  px-4 py-2 mt-5 hvr-sweep-to-right">
+              <div
+                className="bg-secondary text-black font-sans  px-4 py-2 mt-5 hvr-sweep-to-right"
+                onClick={() => scrolltoHash('first-section')}>
+              
                 Get Started
-              </button>
+              </div>
               <ImageOne />
             </div>
           </div>
         </div>
-        <Division />
+        <div id="first-section">
+        <div className="flex justify-center mt-36 lg:mt-[50vh]">
+        <div className="mb-10">
+          <h1 className="font-bold font-sans text-3xl min-[450px]:text-[36px] sm:text-[52px] md:text-[64px] lg:text-[74px] xl:text-[86px]">
+            Our Division
+          </h1>
+        </div>
+        </div>
+      </div>
+          <Division />
+      
         {/* footer */}
-        <footer className="mt-[10vh] sm:mt-[30vh] px-5 lg:px-10 py-12 bg-white backdrop-blur-md bg-opacity-20 font-sans ">
+        <footer id="footer" className="second-section mt-[10vh] sm:mt-[30vh] px-5 lg:px-10 py-12 bg-white backdrop-blur-md bg-opacity-20 font-sans ">
           <h1 className=" font-bold text-3xl min-[480px]:text-[36px] sm:text-[42px] md:text-[48px] md:leading-tight lg:text-[54px] xl:text-[64px] xl:leading-none">
             Komunitas Mahasiswa TIK <br /> Universitas Gadjah Mada
           </h1>
