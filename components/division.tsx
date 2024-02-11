@@ -45,7 +45,7 @@ export const Division = () => {
             </div>
           </div>
         </div>
-        <div className="content content--sticky content--card bg-white backdrop-blur-md bg-opacity-30">
+        <div className="content content--sticky content--card bg-black backdrop-blur-md bg-opacity-30">
           <div className="flex sm:flex-row flex-col items-center justify-center gap-5 ">
             <Image
               src="/logomedinfo.png"
@@ -119,7 +119,7 @@ export const Division = () => {
             </div>
           </div>
         </div>
-        <div className="content content--sticky content--card bg-white backdrop-blur-md bg-opacity-30">
+        <div className="content content--sticky content--card bg-black backdrop-blur-md bg-opacity-30">
           <div className="flex sm:flex-row flex-col items-center justify-center gap-5 ">
             <Image
               src="/logocp.png"
@@ -159,7 +159,7 @@ export const Division = () => {
         <div className="content content--sticky content--card bg-black backdrop-blur-md bg-opacity-30">
           <div className="flex sm:flex-row flex-col items-center justify-center gap-5 ">
             <Image
-              src="/logocp.png"
+              src="/logoasgama.png"
               alt="ASGama"
               width={200}
               height={200}
@@ -193,7 +193,7 @@ export const Division = () => {
             </div>
           </div>
         </div>
-        <div className="content content--sticky content--card bg-white backdrop-blur-md bg-opacity-30">
+        <div className="content content--sticky content--card bg-black backdrop-blur-md bg-opacity-30">
           <div className="flex sm:flex-row flex-col items-center justify-center gap-5 ">
             <Image
               src="/logosrd.png"
@@ -269,7 +269,7 @@ export const Division = () => {
             </div>
           </div>
         </div>
-        <div className="content content--sticky content--card bg-white backdrop-blur-md bg-opacity-30">
+        <div className="content content--sticky content--card bg-black backdrop-blur-md bg-opacity-30">
           <div className="flex sm:flex-row flex-col items-center justify-center gap-5 ">
             <Image
               src="/logogamelab.png"
@@ -343,7 +343,7 @@ export const Division = () => {
             </div>
           </div>
         </div>
-        <div className="content content--sticky content--card bg-white backdrop-blur-md bg-opacity-30">
+        <div className="content content--sticky content--card bg-black backdrop-blur-md bg-opacity-30">
           <div className="flex sm:flex-row flex-col items-center justify-center gap-5 ">
             <Image
               src="/logodmai.png"

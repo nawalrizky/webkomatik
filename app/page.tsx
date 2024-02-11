@@ -31,12 +31,12 @@ export default function Home() {
               tech innovation reality!
             </h1>
             <div className="inline-flex justify-end ml-14 items-end gap-2">
-              <div
+              <Link
                 className="bg-secondary text-black font-sans  px-4 py-2 mt-5 hvr-sweep-to-right"
-                onClick={() => scrolltoHash('first-section')}>
+                href="/about">
               
                 Get Started
-              </div>
+              </Link>
               <ImageOne />
             </div>
           </div>
@@ -62,16 +62,16 @@ export default function Home() {
             Yogyakarta 555281
           </p>
           <div className="wrap inline-flex gap-10 mt-6">
-            <a className="hover-fx flex items-center p-2">
+            <Link className="hover-fx flex items-center p-2" href="https://www.instagram.com/komatikugm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
               <Instagram />
-            </a>
-            <a className="hover-fx flex items-center p-2">
+            </Link>
+            <a className="hover-fx flex items-center p-2" href="mailto:komatik.wg@ugm.ac.id">
               <Mail />
             </a>
-            <a className="hover-fx flex items-center p-2">
+            <a className="hover-fx flex items-center p-2" href="https://line.me/R/ti/p/fsr3694v">
               <Line />
             </a>
-            <a className="hover-fx flex items-center p-2">
+            <a className="hover-fx flex items-center p-2" href="https://facebook.com/gemastikUGM">
               <Facebook />
             </a>
           </div>

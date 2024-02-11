@@ -41,7 +41,7 @@ export default function MenuNavbar() {
             Home
           </Link>
         </NavbarItem>
-        <Dropdown>
+        {/* <Dropdown>
           <NavbarItem>
             <DropdownTrigger>
               <Button
@@ -98,14 +98,14 @@ export default function MenuNavbar() {
               +Supreme Support
             </DropdownItem>
           </DropdownMenu>
-        </Dropdown>
+        </Dropdown> */}
         <NavbarItem >
           <Link className="text-white text-[16px]" href="/about" >
             About Us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} className="text-[14px] ml-2 px-3 rounded-full border-secondary text-secondary bg-transparent border" href="#" >
+          <Button as={Link} className="text-[14px] ml-2 px-3 rounded-full border-secondary text-secondary bg-transparent border" href="https://www.instagram.com/komatikugm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" >
             CONTACT US
           </Button>
         </NavbarItem>
