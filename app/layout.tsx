@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import MenuNavbar from "@/components/menuNavbar";
+import { Footer } from "@/components/footer";
 import Spline from "@splinetool/react-spline";
 import {NextUIProvider} from "@nextui-org/react";
 const inter = Inter({ subsets: ["latin"] });
@@ -32,7 +33,6 @@ export default function RootLayout({
           className=""
           scene="https://prod.spline.design/BtnIEjZ62RKxnIEq/scene.splinecode"
         />
-         
       </div>
  
         {children}

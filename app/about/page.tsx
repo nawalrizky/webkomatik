@@ -55,7 +55,7 @@ export default function About() {
           height={500}
           className="w-full sm:hidden "
         />
-        <div className="w-full sm:w-1/2 mt-4">
+        <div className="w-full sm:w-1/2 mt-4  bg-white backdrop-blur-md bg-opacity-20 py-6 px-4 rounded-3xl">
           <h1 className="font-bold text-secondary text-3xl min-[450px]:text-[36px] sm:text-[52px] ">
             What is Komatik?
           </h1>
@@ -75,7 +75,7 @@ export default function About() {
           </h1>
         </div>
       </div>
-      <div className="backdrop-blur-none mt-[3vh] sm:mb-32 ">
+      <div className="bg-white backdrop-blur-md bg-opacity-20 py-6 px-4 rounded-3xl mt-[3vh] sm:mb-32 ">
         <h1 className="font-bold text-white text-3xl min-[450px]:text-[36px] sm:text-[52px] ">
           Our <span className="text-secondary">Vision</span>
         </h1>
@@ -91,7 +91,7 @@ export default function About() {
           technology and communication nationally and internationally.
         </h1>
       </div>
-      <div className="backdrop-blur-none mt-[3vh] ">
+      <div className="bg-white backdrop-blur-md bg-opacity-20 py-6 px-4 rounded-3xl mt-[3vh] ">
         <h1 className="font-bold text-white text-3xl min-[450px]:text-[36px] sm:text-[52px] ">
           Our <span className="text-secondary">Mission</span>
         </h1>

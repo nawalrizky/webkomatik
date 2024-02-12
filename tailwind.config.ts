@@ -26,11 +26,17 @@ const config: Config = {
     },
   },
   darkMode: "class",
-  plugins: [nextui({
+  plugins: [nextui({addCommonColors: true,
     themes:{
       light: {
         colors: { 
+          default: '#FFA800',
           primary: '#FFA800',
+          danger: '#FFA800',
+        },
+        dark:{
+          primary: '#FFA800',
+          default: '#FFA800',
           danger: '#FFA800',
         },
         focus: '#FFA800',
